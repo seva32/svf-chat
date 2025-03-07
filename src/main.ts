@@ -1,4 +1,4 @@
-import { server } from "./index.js";
+import { server } from "./index.cjs";
 
 const port = process.env.port || 3333;
 

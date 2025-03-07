@@ -52,6 +52,7 @@ footer {
   min-width: 100%;
   font-size: var(--font-sm);
   color: var(--full-white);
+  z-index: -10;
 }
 
 label {
@@ -104,6 +105,10 @@ button:disabled {
 .button_hollow:hover {
   background-color: transparent;
   color: var(--carmin-brigth);
+}
+
+.hero__section {
+  padding-bottom: 5rem;
 }
 
 /* Join Page Styles */

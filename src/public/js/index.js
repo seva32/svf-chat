@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 $(".js-trigger").on("click", function () {
   $(this).toggleClass("menu__trigger--active");
   common();

@@ -1,5 +1,7 @@
 ## Needs key.pem & cert.pem
 
+In windows use wsl.exe to run redis, but remove node_modules and yarn.lock on OS change
+
 (.env for path and pass, but if DO nginx takes care of that so use http and not https)
 
 In dev mode comment index.html base tag (not needed if nginx proxies in DO)
