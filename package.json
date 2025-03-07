@@ -1,0 +1,17 @@
+{
+  "name": "svf-chat",
+  "version": "0.0.1",
+  "description": "Chat using socketio",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "real",
+    "time",
+    "sockets",
+    "node"
+  ],
+  "author": "Sebs Fantini",
+  "license": "ISC"
+}
