@@ -147,6 +147,7 @@ button:disabled {
 .hero__header-item-rigth span.hero__header-item--text {
   color: var(--full-white);
   padding-left: 0.5em;
+  padding-right: 1rem;
   display: flex;
   align-items: center;
   font-size: var(--font-md);
