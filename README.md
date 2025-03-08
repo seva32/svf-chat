@@ -1,4 +1,4 @@
-## Needs key.pem & cert.pem
+## Windows dev env
 
 In windows use wsl.exe to run redis, but remove node_modules and yarn.lock on OS change
 
@@ -13,11 +13,15 @@ sudo systemctl enable redis-server
 redis-cli ping
 ```
 
-(.env for path and pass, but if DO nginx takes care of that so use http and not https)
+## Nginx notes
 
-In dev mode comment index.html base tag (not needed if nginx proxies in DO)
+If https es handled by the server and not the tunnel or docker, needs key.pem & cert.pem
 
-<link> <form> dont use /[x], just [x]
+With docker and nginx use http and not https for express
+
+index.html base tag not needed if nginx proxies
+
+In link and form html tags dont use /[x], just [x]
 
 nginx for socket.io:
 
@@ -54,7 +58,9 @@ location ~* \.io {
 
 ## .env
 
+```ruby
 CHAT_SESSION_SECRET=
 CHAT_SESSION_NAME=
 CHAT_PORT=
 CHAT_NODE_ENV=
+```
