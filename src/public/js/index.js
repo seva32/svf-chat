@@ -1,3 +1,23 @@
+async function loadTranslations(lang) {
+  const res = await fetch(`/locales/${lang}.json`);
+  return res.json();
+}
+
+async function changeLanguage(lang) {
+  const translations = await loadTranslations(lang);
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[key]) {
+      el.innerText = translations[key];
+    }
+  });
+}
+
+// Auto-detect language (default to English)
+const userLang = navigator.language.split("-")[0];
+changeLanguage(userLang || "en");
+
 function toggleDropdown() {
   const dropdown = document.querySelector(".dropdown");
   const button = document.getElementById("dropdown-button");
@@ -12,6 +32,7 @@ function selectLanguage(lang) {
     .getElementById("dropdown-button")
     .setAttribute("aria-expanded", "false");
   document.querySelector(".dropdown").classList.remove("active");
+  changeLanguage(lang?.toLowerCase() || "en");
 }
 
 function handleKeyDown(event, lang) {
