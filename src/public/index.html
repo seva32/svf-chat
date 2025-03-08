@@ -80,28 +80,28 @@
     </div>
     <div class="flex_container hero__title">
       <div class="hero__title-main">
-        <span>OWN CHAT ROOM WITH ONE CLICK?</span>&nbsp;&nbsp;<span class="yes">YES!</span>
+        <span data-i18n="header">OWN CHAT ROOM WITH ONE CLICK?</span>&nbsp;&nbsp;<span class="yes" data-i18n="yes">YES!</span>
       </div>
-      <div class="hero__title-subtitle">
+      <div class="hero__title-subtitle" data-i18n="subheader">
         SVFChat is a FREE live chat site where you can instantly create a room
         to meet your friends and more, just one click away!
       </div>
       <div class="hero__title-users">
         <i class="fas fa-comments fa-lg"></i>&nbsp;
         <span><strong>1,369,69~</strong></span>&nbsp;
-        <span>Joined SVFChat</span>
+        <span data-i18n="joined">joined</span>&nbsp;SVFChat
       </div>
       <div class="hero__form">
         <form action="chat.html">
           <input type="text" name="username" placeholder="Choose your display name" required minlength="1"
             maxlength="25" pattern="[^<>\(\)\{\}\[\]`]+"
             oninvalid="this.setCustomValidity('Min 1 character, max 25 chars, not allowed: [](){}<>`')"
-            oninput="this.setCustomValidity('')" />
+            oninput="this.setCustomValidity('')" data-i18n="inputusername" />
           <input type="text" name="room" placeholder="Select a room name" required minlength="1" maxlength="25"
             pattern="[^<>\(\)\{\}\[\]`]+"
             oninvalid="this.setCustomValidity('Min 1 character, max 25 chars, not allowed: [](){}<>`')"
-            oninput="this.setCustomValidity('')" />
-          <button><strong>Start Chatting</strong></button>
+            oninput="this.setCustomValidity('')" data-i18n="inputroom" />
+          <button><strong data-i18n="start">Start Chatting</strong></button>
         </form>
       </div>
     </div>
@@ -109,7 +109,7 @@
   <footer class="flex_center flex_column">
     <div>svfchat.tk @ sebastianfantini.com</div>
     <form action="terms.html">
-      <button class="button_hollow">Terms &amp; Conditions</button>
+      <button class="button_hollow" data-i18n="terms">Terms &amp; Conditions</button>
     </form>
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

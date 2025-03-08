@@ -1,4 +1,19 @@
 {
   "login": "Anmelden",
-  "join": "Beitreten"
+  "join": "Beitreten",
+  "header": "EIGENER CHATRAUM MIT EINEM KLICK?",
+  "yes": "Ja",
+  "subheader": "SVFChat ist eine KOSTENLOSE Live-Chat-Seite, auf der du sofort einen Raum erstellen kannst, um deine Freunde und mehr zu treffen – nur einen Klick entfernt!",
+  "joined": "ist beigetreten",
+  "inputusername": "Gib deinen Benutzernamen ein",
+  "inputroom": "Gib den Namen deines Raums ein",
+  "start": "Chat starten",
+  "terms": "Allgemeine Geschäftsbedingungen",
+  "back": "Zurück",
+  "room": "Raum",
+  "usersinthisroom": "Benutzer in diesem Raum",
+  "send": "Senden",
+  "message": "Nachricht",
+  "sendLocation": "Standort senden",
+  "logout": "Abmelden"
 }
