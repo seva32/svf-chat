@@ -441,3 +441,19 @@ button:disabled {
 .dropdown.active .dropdown-menu {
   display: block;
 }
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  color: white;
+  border: none;
+  padding: 10px 15px 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back-btn i {
+  margin-right: 8px;
+}

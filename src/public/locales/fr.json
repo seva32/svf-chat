@@ -1,4 +1,19 @@
 {
   "login": "Connexion",
-  "join": "Rejoindre"
+  "join": "Rejoindre",
+  "header": "VOTRE SALLE DE CHAT EN UN CLIC ?",
+  "yes": "Oui",
+  "subheader": "SVFChat est un site de chat en direct GRATUIT où vous pouvez instantanément créer une salle pour rencontrer vos amis et plus encore, à seulement un clic !",
+  "joined": "a rejoint",
+  "inputusername": "Entrez votre nom d'utilisateur",
+  "inputroom": "Entrez le nom de votre salle",
+  "start": "Commencer à discuter",
+  "terms": "Conditions générales",
+  "back": "Retour",
+  "room": "Salle",
+  "usersinthisroom": "Utilisateurs dans cette salle",
+  "send": "Envoyer",
+  "message": "Message",
+  "sendLocation": "Envoyer la localisation",
+  "logout": "Se déconnecter"
 }

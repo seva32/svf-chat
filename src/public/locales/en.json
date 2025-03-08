@@ -1,4 +1,19 @@
 {
   "login": "Login",
-  "join": "Join"
+  "join": "Join",
+  "header": "OWN CHAT ROOM WITH ONE CLICK?",
+  "yes": "Yes",
+  "subheader": "SVFChat is a FREE live chat site where you can instantly create a room to meet your friends and more, just one click away!",
+  "joined": "joined",
+  "inputusername": "Enter your username",
+  "inputroom": "Enter your room name",
+  "start": "Start Chatting",
+  "terms": "Terms and Conditions",
+  "back": "Back",
+  "room": "Room",
+  "usersinthisroom": "Users in this room",
+  "send": "Send",
+  "message": "Message",
+  "sendLocation": "Send Location",
+  "logout": "Logout"
 }

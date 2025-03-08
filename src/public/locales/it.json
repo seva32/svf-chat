@@ -1,4 +1,19 @@
 {
   "login": "Accedi",
-  "join": "Unisciti"
+  "join": "Unisciti",
+  "header": "LA TUA CHAT ROOM CON UN SOLO CLIC?",
+  "yes": "Sì",
+  "subheader": "SVFChat è un sito di chat live GRATUITO dove puoi creare una stanza all'istante per incontrare i tuoi amici e altro ancora, a un solo clic di distanza!",
+  "joined": "si è unito",
+  "inputusername": "Inserisci il tuo nome utente",
+  "inputroom": "Inserisci il nome della tua stanza",
+  "start": "Inizia a chattare",
+  "terms": "Termini e Condizioni",
+  "back": "Indietro",
+  "room": "Stanza",
+  "usersinthisroom": "Utenti in questa stanza",
+  "send": "Invia",
+  "message": "Messaggio",
+  "sendLocation": "Invia posizione",
+  "logout": "Disconnettersi"
 }

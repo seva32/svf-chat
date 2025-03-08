@@ -1,4 +1,19 @@
 {
   "login": "Iniciar sesión",
-  "join": "Unirse"
+  "join": "Unirse",
+  "header": "¿TU PROPIA SALA DE CHAT CON UN SOLO CLIC?",
+  "yes": "Sí",
+  "subheader": "SVFChat es un sitio de chat en vivo GRATUITO donde puedes crear una sala instantáneamente para conocer a tus amigos y más, ¡a solo un clic de distancia!",
+  "joined": "se ha unido",
+  "inputusername": "Ingresa tu nombre de usuario",
+  "inputroom": "Ingresa el nombre de tu sala",
+  "start": "Comenzar a chatear",
+  "terms": "Términos y Condiciones",
+  "back": "Volver",
+  "room": "Sala",
+  "usersinthisroom": "Usuarios en esta sala",
+  "send": "Enviar",
+  "message": "Mensaje",
+  "sendLocation": "Enviar ubicación",
+  "logout": "Cerrar sesión"
 }
