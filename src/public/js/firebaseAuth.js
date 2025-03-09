@@ -19,7 +19,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
   const email = document.getElementById("email");
   const password = document.getElementById("password");
   const signUpBtn = document.getElementById("signUpBtn");
