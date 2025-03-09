@@ -137,6 +137,23 @@ button:disabled {
   min-width: 4em;
 }
 
+.hero__header-item--btn-login {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.hero__header-item--btn-login:hover {
+  background: transparent;
+}
+
 .hero__header-item-rigth .hero__header-language {
   min-width: 20ch;
   display: flex;
@@ -262,14 +279,22 @@ button:disabled {
   opacity: 0;
 }
 
+button#hero-logout,
+button#hero-join {
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+}
+
 /* Chat Page Layout */
 
 .chat {
   display: flex;
+  min-height: 70vh;
+  max-height: 85vh;
 }
 
 .chat__sidebar {
-  height: 100vh;
   color: white;
   background: var(--deep-blue);
   width: 225px;
@@ -278,12 +303,29 @@ button:disabled {
 
 /* Chat styles */
 
+.chat__header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.chat__header--user {
+  color: var(--ligth-grey);
+  font-size: var(--font-lg);
+  font-weight: 600;
+  align-self: center;
+}
+
 .chat__main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
   background: var(--countries);
+}
+
+.chat__footer {
+  position: relative;
+  padding-top: 2rem;
 }
 
 .chat__messages {
@@ -456,4 +498,53 @@ button:disabled {
 
 .back-btn i {
   margin-right: 8px;
+}
+
+.modal__container {
+  overflow: hidden;
+  background-color: #fff;
+  width: 400px;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.modal__container > input {
+  width: 100%;
+  border: 2px solid var(--deep-blue);
+}
+
+.modal__container > input#email {
+  margin-bottom: 10px;
+}
+
+.modal__footer {
+  text-align: center;
+}
+
+.modal__footer .modal__btn {
+  display: inline-block;
+  min-width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 4px 6px;
+  display: flex;
+  color: var(--carmin-ligth);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: var(--carmin-red);
 }

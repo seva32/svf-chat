@@ -8,20 +8,27 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
   <link rel="manifest" href="img/site.webmanifest" />
   <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <div class="chat">
+  <header class="flex_container chat__header">
+    <a href="index.html" class="back-btn">
+      <i class="fas fa-arrow-left" style="color: white;" title="Back home"></i>
+    </a>
+    <div class="chat__header--user" id="chat-logged-user">Logged</div>
+  </header>
+  <section class="chat">
     <div id="sidebar" class="chat__sidebar"></div>
     <div class="chat__main">
       <div id="messages" class="chat__messages"></div>
       <div class="compose">
         <form id="message-form">
-          <input name="inputmessage" data-i18n="message" placeholder="Message" required autocomplete="off" minlength="1" maxlength="500"
-            pattern="[^<>\(\)\{\}\[\]`]+"
+          <input name="inputmessage" data-i18n="message" placeholder="Message" required autocomplete="off" minlength="1"
+            maxlength="500" pattern="[^<>\(\)\{\}\[\]`]+"
             oninvalid="this.setCustomValidity('Min 1 character, max 500 chars, not allowed: [](){}<>`')"
             oninput="this.setCustomValidity('')" />
           <button><span data-i18n="send">Send</span></button>
@@ -29,7 +36,13 @@
         <button id="send-location"><span data-i18n="sendLocation">Send Location</span></button>
       </div>
     </div>
-  </div>
+  </section>
+  <footer class="flex_center flex_column chat__footer">
+    <div>svfchat.tk @ sebastianfantini.com</div>
+    <form action="terms.html">
+      <button class="button_hollow" data-i18n="terms">Terms &amp; Conditions</button>
+    </form>
+  </footer>
 
   <script id="msg-template" type="text/html">
       <div class="message">
@@ -52,9 +65,6 @@
     </script>
 
   <script id="sidebar-template" type="text/html">
-    <a href="index.html" class="back-btn">
-      &lt;&lt;&nbsp;<span data-i18n="back">Back</span>
-    </a>
     <h2 class="room-title"><span data-i18n="room">Room</span>&nbsp;<strong>{{room}}</strong></h2>
     <hr />
     <h3 class="list-title" data-i18n="usersinthisroom">Users in this room</h3>
@@ -70,6 +80,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+  <script type="module" src="js/firebaseAuth.js"></script>
   <script type="module" src="js/chat.js"></script>
 </body>
 

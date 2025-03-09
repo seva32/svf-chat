@@ -71,16 +71,20 @@
             </ul>
           </div>
         </div>
-        <i class="far fa-user-circle"></i>
-        <span class="hero__header-item--text" data-i18n="login">Login</span>
-        <button class="hero__header-item--btn" data-i18n="join">
+        <button class="hero__header-item--btn-login" id="hero-login">
+          <i class="far fa-user-circle"></i>
+          <span class="hero__header-item--text" data-i18n="login">Login</span>
+        </button>
+        <button class="hero__header-item--btn" data-i18n="join" id="hero-join">
           Join
         </button>
+        <button id="hero-logout"><span data-i18n="logout">Logout</span></button>
       </div>
     </div>
     <div class="flex_container hero__title">
       <div class="hero__title-main">
-        <span data-i18n="header">OWN CHAT ROOM WITH ONE CLICK?</span>&nbsp;&nbsp;<span class="yes" data-i18n="yes">YES!</span>
+        <span data-i18n="header">OWN CHAT ROOM WITH ONE CLICK?</span>&nbsp;&nbsp;<span class="yes"
+          data-i18n="yes">YES!</span>
       </div>
       <div class="hero__title-subtitle" data-i18n="subheader">
         SVFChat is a FREE live chat site where you can instantly create a room
@@ -106,12 +110,26 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="modal__container" id="login">
+      <button class="modal__close" id="closeModal">
+        <i class="fas fa-times"></i>
+      </button>
+      <input type="email" placeholder="Email" id="email">
+      <input type="password" placeholder="Password" id="password"> <br><br>
+      <div class="modal__footer">
+        <button class="modal__btn" id="signUpBtn">Join</button>
+        <button class="modal__btn" id="signInBtn">Login</button>
+      </div>
+    </div>
+  </section>
   <footer class="flex_center flex_column">
     <div>svfchat.tk @ sebastianfantini.com</div>
     <form action="terms.html">
       <button class="button_hollow" data-i18n="terms">Terms &amp; Conditions</button>
     </form>
   </footer>
+  <script type="module" src="js/firebaseAuth.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/index.js"></script>
 </body>
