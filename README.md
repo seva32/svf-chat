@@ -2,6 +2,15 @@
 
 In windows use wsl.exe to run redis, but remove node_modules and yarn.lock on OS change
 
+In macos brew/nginx doesn't include subs_filter_types for socket.io:
+
+```bash
+brew tap denji/nginx
+brew install nginx-full --with-subs-filter-module
+sudo brew services start denji/nginx/nginx-full
+# brew services start nginx-full
+```
+
 ```ruby
 sudo apt update && sudo apt upgrade -y
 sudo apt install curl -y
